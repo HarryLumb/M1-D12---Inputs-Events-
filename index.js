@@ -32,7 +32,10 @@ const changePcontent = function () {
      */
 
 const changeUrls = function () {
-  document.getElementById("epicode").href = "https://www.google.com";
+ const aLinks = document.querySelectorAll("a");
+  for (let i = 0; i < aLinks.length; i++) {
+    aLinks[i].href = "https://www.google.com";
+  }
 };
 // changeUrls();
 
